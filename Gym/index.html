@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Zero Gravity Fitness</title>
+    <style>
+            #h1{
+                /*position: absolute;*/
+                margin-top: 300px;
+                margin-left: 250px;
+/*                letter-spacing: 10px;*/
+                font-size: 100px;
+                font-weight: 100;
+                color: #fff;
+                /*z-index: 2;*/
+            }
+        .navbar{
+            margin-bottom: 0;
+            background-color: transparent;
+            border: 0;
+            /*opacity: 0.1;*/
+        }
+        .navbar ul{
+            margin-right: 30px;
+        }
+        .navbar li{
+            font-size: 20px;
+        }
+        #navbar li a{
+          color: white;
+        }
+        .navbar-brand{
+          font-size: 30px;
+        }
+         .navbar-brand a{
+          text-decoration: none;
+        }
+        #navbar li a:hover{
+          color: #888;
+        }
+        #home{
+            position: relative;
+            height: 700px;
+            background-image: url("gym.jpg");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #about-us{
+          height: 300px;
+        }
+        #about-heading{
+          font-size: 60px;
+          font-weight: 70;
+          text-align: center;
+          margin-top: 30px;
+        }
+        #details{
+          margin: 30px;
+        }
+        #about-p{
+          font-size: 1.4em;
+        }
+        #programs{
+          background-image: url("programs.jpg");
+          height: 400px;
+           background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #program-heading{
+          position: absolute;
+          font-size: 100px;
+          font-weight: bold;
+          text-align: center;
+          margin-top: 100px;
+          margin-left: 450px;
+          color: #707BC7;
+          opacity: 0.8;
+        }
+        #program-details{
+          height: 350px;
+        }
+        #programs p{
+          font-size: 2em;
+          position: absolute;
+          margin-left: 550px;
+          text-align: center;
+          margin-top: 230px;
+          color: #000;
+        }
+        #program-details h1{
+          font-size: 30px;
+        }
+        #program-details p{
+          font-size: 1.1em;
+        }
+        #heading a{
+          margin-top: 50%;
+          padding-left: 600px;
+          text-decoration: none;
+          color: white;
+          /*text-align: center;*/
+          font-size: 1.7em;
+        }
+        #heading a span{
+          position: absolute;
+          top: 70%;
+          left: 50%;
+          width: 44px;
+          height: 44px;
+          margin-left: -12px;
+          border-left: 1px solid #fff;
+          border-bottom: 1px solid #fff;
+          transform: rotate(-45deg);
+          animation: sdb04 2s infinite;
+          box-sizing: border-box;
+        }
+        @keyframes sdb04{
+          0%{
+            transform: rotate(-45deg) translate(0, 0);
+          }
+          20%{
+            transform: rotate(-45deg) translate(-10px, 10px);
+          }
+          40%{
+            transform: rotate(-45deg) translate(0, 0);
+          }
+        }
+        #membership{
+          background-image: url(membership.jpg);
+          height: 500px;
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        #membership h1{
+          color: white;
+          opacity: 0.9;
+          font-size: 6em;
+          position: absolute;
+          margin-left: 35%;
+          margin-top: 15%;
+          /*text-align: center;*/
+        }
+        #membership #button{
+          width: 200px;
+          height: 60px;
+          align-items: center;
+          margin-left: 45%;
+          margin-top: 28%;
+          background-color: transparent;
+          border: 2px solid white;
+          border-radius: 0;
+          text-decoration: none;
+          color: white;
+          padding: 1%;
+          font-size: 1.5em;
+        }
+        #membership #details{
+          font-size: 1.5em;
+          color: white;
+          position: absolute;
+          /*text-align: center;*/
+          margin-top: 22%;
+          letter-spacing: 2px;
+          margin-left: 34%;
+        }
+        #membership #button:hover{
+          background: white;
+          color: black;
+          transition: background-color 0.1s ease-in-out;
+          /*border-color: black;*/
+        }
+        #gallery{
+          margin-bottom: 30px;
+        }
+        #gallery h1{
+          text-align: center;
+          font-size: 5em;
+          margin-bottom: 50px;
+        }
+        #fourth{
+          margin-top: 25px;
+        }
+        #blog{
+             background-image: url(blog1.jpg);
+          height: 500px;
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        #blog h1{
+          font-size: 5em;
+          position: absolute;
+          margin-top: 150px;
+          margin-left: 45%;
+        }
+         #blog #button{
+          width: 200px;
+          height: 60px;
+          align-items: center;
+          margin-left: 45%;
+          margin-top: 28%;
+          background-color: transparent;
+          border: 2px solid white;
+          border-radius: 0;
+          text-decoration: none;
+          color: white;
+          padding: 1%;
+          font-size: 1.5em;
+        }
+        #blog #blog-details{
+          font-size: 2.5em;
+          color: white;
+          position: absolute;
+          /*text-align: center;*/
+          margin-top: 17%;
+          letter-spacing: 2px;
+          margin-left: 36%;
+        }
+        #blog #button:hover{
+          background: white;
+          color: black;
+          transition: background-color 0.1s ease-in-out;
+          /*border-color: black;*/
+        }
+        #contact h1{
+          text-align: center;
+          font-size: 5em;
+          font-weight: bold;
+        }
+        #contact #contactus{
+          font-size: 1.5em;
+        }
+          #footer {
+          background-color: #2d2d30;
+          color: #f5f5f5;
+          /*width: 100%;*/
+          /*padding: 32px;*/
+        }
+      #footer a {
+        color: #f5f5f5;
+      }
+      #footer a:hover {
+        color: #777;
+        text-decoration: none;
+      }  
+      .form-control {
+        border-radius: 0;
+      }
+      textarea {
+        resize: none;
+      }
+      #contactbutton{
+        width: 100px;
+        height: 50px;
+        background-color: white;
+        border: 0.1px solid black;
+        border-radius: 0;
+      }
+      #contactbutton:hover{
+        background-color: black;
+        color: white;
+        transition: background-color 0.1s ease-in-out;
+      }
+      @media(max-width: 479px){
+        #home{
+          width: 100%;
+          height: 700px;
+        }
+        #h1{
+          margin-left: 10px;
+          font-size: 2.7em;
+        }
+        #about-us{
+          height: 500px;
+        }
+          #about-heading{
+          font-size: 40px;
+          font-weight: 50;
+          /*text-align: center;*/
+          /*margin-top: 30px;*/
+        }
+        #details{
+          margin: 25px;
+        }
+        #about-p{
+          font-size: 1.2em;
+        }
+        #program-heading{
+          /*position: absolute;*/
+          font-size: 70px;
+          /*font-weight: bold;*/
+          /*text-align: center;*/
+          margin-top: 100px;
+          margin-left: 40px;
+          color: #707BC7;
+          opacity: 0.8;
+        }
+        #program-details{
+          height: 700px;
+        }
+        #programs p{
+          font-size: 2.2em;
+          /*position: absolute;*/
+          margin-left: 50px;
+          /*text-align: center;*/
+          /*margin-top: 230px;*/
+          /*color: #000;*/
+        }
+        #program-details h1{
+          font-size: 20px;
+        }
+        #program-details p{
+          font-size: 1.1em;
+        }
+         #membership{
+          /*background-image: url(membership.jpg);*/
+          height: 500px;
+          width: 100%;
+          /*background-attachment: fixed;*/
+          /*background-position: center;*/
+          /*background-repeat: no-repeat;*/
+          /*background-size: cover;*/
+        }
+        #membership h1{
+          color: white;
+          /*opacity: 0.9;*/
+          font-size: 4em;
+          /*position: absolute;*/
+          margin-left: 15px;
+          /*margin-top: 15%;*/
+          /*text-align: center;*/
+        }
+        #membership #button{
+          /*width: 200px;*/
+          /*height: 60px;*/
+          /*align-items: center;*/
+          margin-left: 25%;
+          margin-top: 68%;
+          background-color: transparent;
+          border: 2px solid white;
+          border-radius: 0;
+          text-decoration: none;
+          color: white;
+          padding: 1%;
+          font-size: 1.5em;
+        }
+        #membership #details{
+          font-size: 1.2em;
+          color: white;
+          /*position: absolute;*/
+          /*text-align: center;*/
+          margin-top: 35%;
+          letter-spacing: 2px;
+          margin-left: 14%;
+        }
+        #image{
+          margin-bottom: 20px;
+        }
+        #blog h1{
+          font-size: 5em;
+          /*position: absolute;*/
+          margin-top: 15px;
+          margin-left: 30%;
+        }
+         #blog #button{
+          /*width: 200px;*/
+          /*height: 60px;*/
+          /*align-items: center;*/
+          margin-left: 25%;
+          margin-top: 68%;
+          /*background-color: transparent;*/
+          /*border: 2px solid white;*/
+          /*border-radius: 0;*/
+          /*text-decoration: none;*/
+          /*color: white;*/
+          /*padding: 1%;*/
+          /*font-size: 1.5em;*/
+        }
+        #blog #blog-details{
+          font-size: 1.5em;
+          /*color: white;*/
+          /*position: absolute;*/
+          /*text-align: center;*/
+          margin-top: 47%;
+          letter-spacing: 2px;
+          margin-left: 16%;
+        }
+      }
+    </style>
+</head>
+<body>
+ <div id="home">
+      <nav class="navbar navbar-default">
+          <div class="container-fluid">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a href="#" class="navbar-brand">LOGO</a>
+              </div>
+              <div class="collapse navbar-collapse" id="navbar">
+                  <ul class="nav navbar-nav navbar-right">
+                      <li><a href="#about-us">About Us</a></li>
+                      <li><a href="#programs">Programs</a></li>
+                      <li><a href="#membership">Membership</a></li>
+                      <li><a href="#gallery">Gallery</a></li>
+                      <li><a href="#contact">Contact US</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+        <div id="heading">
+          <h1 id="h1">Zero Gravity Fitness</h1>
+          <a href="#about-us"><span></span></a>
+        </div>
+      </div>
+      <div id="about-us">
+        <h1 id="about-heading">About Us</h1>
+        <div id="details">
+          <p id="about-p">Welcome to Zero Gravity, our goal is to pro­vide you with the highest quality of fitness services to encourage an active and healthy lifestyle. ZG Fitness Center is designed by Physiotherapist doctor and an IIM management graduate. By enter­ing into an operating agreement with phsio, Fit­ness & Nutrition, we are able to provide a blend of high quality equipment and expert fitness profession­als to create a safe, convenient, and effective fitness environment. We are confident you will appreciate the value of having a high quality fitness facility at your disposal. Thank you for your valued trust on us. </p>
+        </div>
+      </div>
+      <div id="programs">
+        <h1 id="program-heading">Programs</h1>
+        <p>Train your body today!</p>
+      </div>
+      <div id="program-details" class="container">
+        <div id="program-list" class="row">
+          <div class="col-lg-4">
+            <h1>Private & semi private</h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <h1>TRX and Cross functional</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <h1>Small Group Training</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="membership">
+        <h1>Membership</h1>
+        <p id="details">We help you build the physique you desire.</p>
+        <p type="button" class="btn btn-default" id="button">Enroll today</p>
+      </div>
+      <div id="gallery" class="container">
+      <h1>Gallery</h1>
+        <div class="row">
+          <div class="col-lg-4" id="image">
+            <img src="gallery1.jpg">
+          </div>
+          <div class="col-lg-4" id="image">
+            <img src="gallery2.jpg">
+          </div>
+          <div class="col-lg-4" id="image">
+            <img src="gallery3.jpg">
+          </div>
+          <div class="col-lg-4" id="fourth">
+            <img src="gallery4.jpg">
+          </div>
+          <div class="col-lg-4" id="fourth">
+            <img src="gallery5.jpg">
+          </div>
+          <div class="col-lg-4" id="fourth">
+            <img src="gallery6.jpg">
+          </div>
+        </div>
+      </div>
+      <div id="blog">
+        <h1>Blog</h1>
+        <p id="blog-details">A workout for the mind.</p>
+        <p id="button" class="btn btn-default" type="button">Read our blog</p>
+      </div>
+      <div class="container" id="contact">
+        <h1>Contact Us</h1>
+        <P id="contactus">We would like to listen from you !</P>
+        <div class="row">
+            <div class="col-md-4">
+              <p>
+                <p><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i> 21 Raj Block, Naveen Shahdara, Delhi, 110032, India</p>
+                <p><i class="fa fa-mobile fa-2x" aria-hidden="true"></i> 08800889141</p>
+                <p><i class="fa fa-clock-o fa-2x" aria-hidden="true"></i> Hours:</p>
+              </p>
+                  <p>   Monday - Saturday: 6am - 10pm</p>
+                  <p>   Sunday: Closed</p>
+            </div>
+            <div class="col-md-8">
+              <div class="row">
+                <div class="col-sm-6 form-group">
+                  <input type="text" name="name" id="name" class="form-control" placeholder="NAME" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                  <input type="email" name="email" placeholder="Email" class="form-control" id="email" required>
+                </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comments" rows="5"></textarea>
+                <br>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <button class="btn pull-right" type="submit" id="contactbutton">SEND</button>
+                  </div>
+                </div>
+            </div>
+      </div>
+    <script src="js/index.js"></script>
+   	<script src="js/jquery-3.1.0.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
